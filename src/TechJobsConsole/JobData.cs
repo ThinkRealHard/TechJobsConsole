@@ -59,7 +59,7 @@ namespace TechJobsConsole
                 }
             }
 
-            jobMatches.Sort();
+            jobMatches.Sort((job1, job2) => job1["name"].CompareTo(job2["name"]));
             return jobMatches;
         }
 
